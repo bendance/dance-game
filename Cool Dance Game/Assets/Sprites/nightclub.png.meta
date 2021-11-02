@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 40dd8abe1c537d44e9acd16325524d51
+guid: 98bb9571f9df93f42b3537dd7633e63a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7001032899479272567
-    second: nightclub 1_0
+      213: -2813901933384151395
+    second: nightclub_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -92,7 +92,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nightclub 1_0
+      name: nightclub_0
       rect:
         serializedVersion: 2
         x: 32
@@ -106,8 +106,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77cf84a345aa82160800000000000000
-      internalID: 7001032899479272567
+      spriteID: d9e4adba91303f8d0800000000000000
+      internalID: -2813901933384151395
       vertices: []
       indices: 
       edges: []
