@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 471}
   m_MaxSize: {x: 14000, y: 14021}
   vertical: 0
-  controlID: 1325
+  controlID: 4482
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 471}
   m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 1326
+  controlID: 4483
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 1327
+  controlID: 4484
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -310,9 +310,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.15143684, y: -0.15723135, z: -9.714239}
+    m_Target: {x: 3.9590604, y: 2.1745014, z: -15.180374}
     speed: 2
-    m_Value: {x: 0.15143684, y: -0.15723135, z: -9.714239}
+    m_Value: {x: 3.9590604, y: 2.1745014, z: -15.180374}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 31
@@ -363,9 +363,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 0.799918
+    m_Target: 1.1703001
     speed: 2
-    m_Value: 0.799918
+    m_Value: 1.1703001
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -651,8 +651,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 523d0000
-    m_LastClickedInstanceID: 15698
+    m_SelectedInstanceIDs: 463d0000
+    m_LastClickedInstanceID: 15686
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000ea4600008043000094540000305a000010690000b23c000068480000a8480000e4500000e0500000dc50000000000000783e0000
     m_RenameOverlay:
@@ -766,8 +766,8 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 15698
-  m_LastVerticalScrollValue: 0
+  m_LastInspectedObjectInstanceID: 15686
+  m_LastVerticalScrollValue: 613.60004
   m_AssetGUID: 
   m_InstanceID: 0
   m_LockTracker:
