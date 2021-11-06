@@ -25,7 +25,11 @@ MonoBehaviour:
   m_MaxSize: {x: 14000, y: 14021}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 4496
+=======
+  controlID: 6052
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
   controlID: 6052
 >>>>>>> parent of 1bae5d5 (imported all of characters)
@@ -50,15 +54,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 227
     y: 19
     width: 877.19995
     height: 372.2
 =======
+=======
+>>>>>>> parent of 1bae5d5 (imported all of characters)
     x: 349
     y: 19
     width: 710
     height: 399
+<<<<<<< HEAD
+>>>>>>> parent of 1bae5d5 (imported all of characters)
+=======
 >>>>>>> parent of 1bae5d5 (imported all of characters)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -68,7 +78,11 @@ MonoBehaviour:
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetSize: {x: 624, y: 351.2}
+=======
+  m_TargetSize: {x: 1680, y: 945}
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
   m_TargetSize: {x: 1680, y: 945}
 >>>>>>> parent of 1bae5d5 (imported all of characters)
@@ -87,15 +101,21 @@ MonoBehaviour:
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HBaseRangeMin: -124.8
     m_HBaseRangeMax: 124.8
     m_VBaseRangeMin: -70.240005
     m_VBaseRangeMax: 70.240005
 =======
+=======
+>>>>>>> parent of 1bae5d5 (imported all of characters)
     m_HBaseRangeMin: -336
     m_HBaseRangeMax: 336
     m_VBaseRangeMin: -189
     m_VBaseRangeMax: 189
+<<<<<<< HEAD
+>>>>>>> parent of 1bae5d5 (imported all of characters)
+=======
 >>>>>>> parent of 1bae5d5 (imported all of characters)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
@@ -115,15 +135,21 @@ MonoBehaviour:
       x: 0
       y: 21
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 877.19995
       height: 351.2
     m_Scale: {x: 6.411834, y: 6.4118342}
     m_Translation: {x: 438.59985, y: 175.6}
 =======
+=======
+>>>>>>> parent of 1bae5d5 (imported all of characters)
       width: 710
       height: 378
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 355, y: 189}
+<<<<<<< HEAD
+>>>>>>> parent of 1bae5d5 (imported all of characters)
+=======
 >>>>>>> parent of 1bae5d5 (imported all of characters)
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -131,6 +157,7 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
       x: -68.40475
       y: -27.38686
@@ -140,6 +167,8 @@ MonoBehaviour:
   m_defaultScale: 2
   m_LastWindowPixelSize: {x: 2193, y: 930.5}
 =======
+=======
+>>>>>>> parent of 1bae5d5 (imported all of characters)
       x: -355
       y: -189
       width: 710
@@ -147,6 +176,9 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1775, y: 997.5}
+<<<<<<< HEAD
+>>>>>>> parent of 1bae5d5 (imported all of characters)
+=======
 >>>>>>> parent of 1bae5d5 (imported all of characters)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -173,7 +205,11 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1105.2
+=======
+    width: 1060
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
     width: 1060
 >>>>>>> parent of 1bae5d5 (imported all of characters)
@@ -182,7 +218,11 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 4497
+=======
+  controlID: 6030
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
   controlID: 6030
 >>>>>>> parent of 1bae5d5 (imported all of characters)
@@ -206,12 +246,21 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1105.2
     height: 393.2
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
   controlID: 4498
+=======
+    width: 1060
+    height: 420
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
+  vertical: 0
+  controlID: 6031
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
     width: 1060
     height: 420
@@ -238,8 +287,13 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 226
     height: 393.2
+=======
+    width: 348
+    height: 420
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
     width: 348
     height: 420
@@ -274,8 +328,13 @@ MonoBehaviour:
     x: 0
     y: 72
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 225
     height: 372.2
+=======
+    width: 347
+    height: 399
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
     width: 347
     height: 399
@@ -287,7 +346,11 @@ MonoBehaviour:
       m_SelectedIDs: 
       m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ExpandedIDs: 5afbffff463d0000
+=======
+      m_ExpandedIDs: 5afbffff463d00006e3d0000
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
       m_ExpandedIDs: 5afbffff463d00006e3d0000
 >>>>>>> parent of 1bae5d5 (imported all of characters)
@@ -330,10 +393,17 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 226
     y: 0
     width: 879.19995
     height: 393.2
+=======
+    x: 348
+    y: 0
+    width: 712
+    height: 420
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
     x: 348
     y: 0
@@ -372,15 +442,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 226
     y: 72
     width: 877.19995
     height: 372.2
 =======
+=======
+>>>>>>> parent of 1bae5d5 (imported all of characters)
     x: 348
     y: 72
     width: 710
     height: 399
+<<<<<<< HEAD
+>>>>>>> parent of 1bae5d5 (imported all of characters)
+=======
 >>>>>>> parent of 1bae5d5 (imported all of characters)
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -395,9 +471,15 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 1.6167521, y: 1.9702833, z: -28.50369}
     speed: 2
     m_Value: {x: 1.6167521, y: 1.9702833, z: -28.50369}
+=======
+    m_Target: {x: 2.8781846, y: 1.2209189, z: -17.509676}
+    speed: 2
+    m_Value: {x: 2.8781846, y: 1.2209189, z: -17.509676}
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
     m_Target: {x: 2.8781846, y: 1.2209189, z: -17.509676}
     speed: 2
@@ -454,9 +536,15 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 0.0949921
     speed: 2
     m_Value: 0.0949921
+=======
+    m_Target: 1.7788807
+    speed: 2
+    m_Value: 1.7788807
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
     m_Target: 1.7788807
     speed: 2
@@ -632,9 +720,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 393.2
     width: 1105.2
     height: 338.8
+=======
+    y: 420
+    width: 1060
+    height: 312
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
     y: 420
     width: 1060
@@ -670,9 +764,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 465.2
     width: 1104.2
     height: 317.8
+=======
+    y: 492
+    width: 1059
+    height: 291
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
     y: 492
     width: 1059
@@ -693,7 +793,11 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Sprites/characters/stephen
+=======
+    - Assets/Sprites
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
     - Assets/Sprites
 >>>>>>> parent of 1bae5d5 (imported all of characters)
@@ -702,7 +806,11 @@ MonoBehaviour:
   m_StartGridSize: 43
   m_LastFolders:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Assets/Sprites/characters/stephen
+=======
+  - Assets/Sprites
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
   - Assets/Sprites
 >>>>>>> parent of 1bae5d5 (imported all of characters)
@@ -713,9 +821,15 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: 4a3e0000
     m_LastClickedID: 15946
     m_ExpandedIDs: 000000003e3e0000483e00004c3e000000ca9a3b
+=======
+    m_SelectedIDs: 1a3e0000
+    m_LastClickedID: 15898
+    m_ExpandedIDs: 000000000c3e000000ca9a3b
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
     m_SelectedIDs: 1a3e0000
     m_LastClickedID: 15898
@@ -749,7 +863,11 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000003e3e000000ca9a3b
+=======
+    m_ExpandedIDs: 000000000c3e000000ca9a3b
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
     m_ExpandedIDs: 000000000c3e000000ca9a3b
 >>>>>>> parent of 1bae5d5 (imported all of characters)
@@ -778,10 +896,17 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 703d0000
     m_LastClickedInstanceID: 15728
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000ea4600008043000094540000305a000010690000b23c000068480000a8480000e4500000e0500000dc50000000000000783e0000264b0000963d0000503e00005c3e00003e4c0000f251000056520000ba3d0000
+=======
+    m_SelectedInstanceIDs: 643d0000
+    m_LastClickedInstanceID: 15716
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000ea4600008043000094540000305a000010690000b23c000068480000a8480000e4500000e0500000dc50000000000000783e0000
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
     m_SelectedInstanceIDs: 643d0000
     m_LastClickedInstanceID: 15716
@@ -856,9 +981,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1105.2
     y: 0
     width: 430.80005
+=======
+    x: 1060
+    y: 0
+    width: 476
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
     x: 1060
     y: 0
@@ -895,9 +1026,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1105.2001
     y: 72
     width: 429.80005
+=======
+    x: 1060
+    y: 72
+    width: 475
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
     x: 1060
     y: 72
@@ -912,8 +1049,13 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastInspectedObjectInstanceID: 15728
   m_LastVerticalScrollValue: 665.60004
+=======
+  m_LastInspectedObjectInstanceID: 15716
+  m_LastVerticalScrollValue: 0
+>>>>>>> parent of 1bae5d5 (imported all of characters)
 =======
   m_LastInspectedObjectInstanceID: 15716
   m_LastVerticalScrollValue: 0
