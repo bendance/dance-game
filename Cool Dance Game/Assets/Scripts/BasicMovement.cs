@@ -24,7 +24,7 @@ public class BasicMovement : MonoBehaviour
 
         if (hittingAWall)
         {
-            if (movement.y < 0 || last_moved == "down")
+            if (movement.y < 0)
             {
                 Debug.Log("hitting wall");
                 movement.y = 0;
@@ -33,7 +33,6 @@ public class BasicMovement : MonoBehaviour
         else
         {
             Debug.Log("not hitting wall");
-            hittingAWall = false;
         }
 
         Debug.Log(hittingAWall);
@@ -77,12 +76,16 @@ public class BasicMovement : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D col) 
+    void OnCollisionEnter2D(Collision2D collision) 
     {
-        if(col.gameObject.name == "Background")  // or if(gameObject.CompareTag("YourWallTag"))
-        {
+        if(collision.gameObject.name == "Background")
             hittingAWall = true;
-        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if(collision.gameObject.name == "Background")
+            hittingAWall = false;
     }
 
     void FixedUpdate()
