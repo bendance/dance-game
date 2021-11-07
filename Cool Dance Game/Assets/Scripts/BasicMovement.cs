@@ -22,14 +22,17 @@ public class BasicMovement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        if (hittingAWall && (last_moved == "down" || movement.y < 0))
+        if (hittingAWall)
         {
-            Debug.Log("won't let you move down");
-            movement.y = 0;
+            if (movement.y < 0 || last_moved == "down")
+            {
+                Debug.Log("hitting wall");
+                movement.y = 0;
+            }
         }
         else
         {
-            Debug.Log("okay now");
+            Debug.Log("not hitting wall");
             hittingAWall = false;
         }
 
@@ -74,9 +77,9 @@ public class BasicMovement : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision) 
+    void OnTriggerEnter2D(Collider2D col) 
     {
-        if(collision.gameObject.name == "Background")  // or if(gameObject.CompareTag("YourWallTag"))
+        if(col.gameObject.name == "Background")  // or if(gameObject.CompareTag("YourWallTag"))
         {
             hittingAWall = true;
         }

@@ -965,32 +965,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!61 &1189869158
-BoxCollider2D:
+--- !u!68 &1189869158
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189869151}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 3.28, y: 1.84}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 6.56, y: 3.68}
-    newSize: {x: 6.56, y: 3.68}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 6.56, y: 0.5}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.01
+  m_Points:
+  - {x: 0.01, y: 1.72}
+  - {x: 1.8, y: 1.72}
+  - {x: 1.8, y: 2.39}
+  - {x: 5.11, y: 2.39}
+  - {x: 5.11, y: 2.18}
+  - {x: 6.02, y: 2.18}
+  - {x: 6.02, y: 2.08}
+  - {x: 6.55, y: 2.08}
+  - {x: 6.55, y: 0.01}
+  - {x: 0.01, y: 0.01}
+  - {x: 0.01, y: 1.72}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1214319643
 GameObject:
   m_ObjectHideFlags: 0
