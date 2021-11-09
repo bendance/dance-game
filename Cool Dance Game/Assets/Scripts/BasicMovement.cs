@@ -12,7 +12,7 @@ public class BasicMovement : MonoBehaviour
     Vector2 movement;
     Collider2D playerCollider;
 
-    private bool hittingAWall;
+    private bool hittingAnObject;
     private string last_moved;
 
     void Start() 
@@ -28,21 +28,7 @@ public class BasicMovement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        if (hittingAWall)
-        {
-            // hitting wall that's on bottom or top
-            if (movement.y < 0 || movement.y > 0)
-            {
-                Debug.Log("hitting wall up or down");
-                movement.y = 0;
-            }
-
-            // hitting wall that's on left of right
-            if (movement.x > 0 || movement.x < 0)
-            {
-                Debug.Log("hitting side wall");
-            }
-        }
+        
 
         animator.SetFloat("horizontal", movement.x);
         animator.SetFloat("vertical", movement.y);
@@ -84,21 +70,49 @@ public class BasicMovement : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision) 
+    private string objectHitDirection(double x, double y)
     {
-        if(collision.gameObject.name == "Background")
-            hittingAWall = true;
+        if (hittingAnObject)
+        {
+            // hitting wall that's on bottom or top
+            if (movement.y < 0)
+            {
+                return "below";
+            }
+
+            if (movement.y > 0)
+            {
+                return "above";
+            }
+
+            // hitting wall that's on left of right
+            if (movement.x > 0)
+            {
+                return "right";
+            }
+
+            if (movement.x < 0)
+            {
+                return "left";
+            }
+        }
+
+        return "no hit";
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision) 
     {
-        if(collision.gameObject.name == "Background")
-            hittingAWall = false;
+        hittingAnObject = true;
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        hittingAnObject = false;
     }
 
     void FixedUpdate()
     {
         // Movement
-        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement.normalized * speed * Time.fixedDeltaTime);
     }
 }
