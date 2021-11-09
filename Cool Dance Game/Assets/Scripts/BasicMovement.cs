@@ -28,8 +28,6 @@ public class BasicMovement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        
-
         animator.SetFloat("horizontal", movement.x);
         animator.SetFloat("vertical", movement.y);
         animator.SetFloat("speed", movement.sqrMagnitude);
