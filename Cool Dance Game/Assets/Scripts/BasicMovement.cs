@@ -61,6 +61,8 @@ public class BasicMovement : MonoBehaviour
         animator.SetFloat("vertical", movement.y);
         animator.SetFloat("speed", movement.sqrMagnitude);
 
+        // Set the order layer everytime
+
         setLastMoved();
     }
 
