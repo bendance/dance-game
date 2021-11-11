@@ -1,0 +1,14 @@
+So, I have the layers working, I should keep working on music.
+
+Salesforce, Microsoft .NET, Sharepoint
+
+Completed song, fix not being able to move
+
+Fixed that, now how do I hide audio icon in game mode?
+
+Loop doesn't sound very good, wrap the loop
+
+I like the loop now, not bad
+
+I want to find a way to create seamless loops in FL Studio, but the loop is okay for now
+
