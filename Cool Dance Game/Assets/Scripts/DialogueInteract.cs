@@ -5,13 +5,21 @@ using UnityEngine;
 public class DialogueInteract : MonoBehaviour
 {
     public DialogueTrigger trigger;
+    public DialogueManager manager;
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("z"))
+        // Starting dialogue
+        if(Input.GetKeyDown("z") && !manager.dialogueStarted)
         {
             trigger.triggerDialogue();
+        }
+
+        // Continue dialogue
+        if(Input.GetKeyDown("z") && manager.dialogueStarted)
+        {
+            manager.DisplayNextSentence();
         }
     }
 }

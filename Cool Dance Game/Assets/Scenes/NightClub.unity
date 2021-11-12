@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0174897a1b902764a8cc8b40fdae53e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueStarted: 0
 --- !u!4 &90778602
 Transform:
   m_ObjectHideFlags: 0
@@ -461,6 +462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: {fileID: 984824438}
+  manager: {fileID: 90778601}
 --- !u!1 &443809779
 GameObject:
   m_ObjectHideFlags: 0
