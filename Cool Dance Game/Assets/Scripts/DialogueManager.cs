@@ -54,11 +54,30 @@ public class DialogueManager : MonoBehaviour
     IEnumerator typeSentence (string sentence)
     {
         dialogueText.text = "";
+        bool firstLine = true;
 
-        foreach (char letter in sentence.ToCharArray())
+        // Split the sentence by its spaces
+        string[] words = sentence.Split(' ');
+
+        Debug.Log(words);
+
+        foreach (string word in words)
         {
-            dialogueText.text += letter;
-            yield return new WaitForSeconds(0.04f);
+            // If a word plus length of current dialogue text is longer than 39, add a new line
+            if (word.Length + dialogueText.text.Length > 39 && firstLine)
+            {
+                dialogueText.text += "\n";
+                firstLine = false;
+            }
+
+            // Add each letter to text box, plus a space
+            foreach (char letter in word)
+            {
+                dialogueText.text += letter;
+                yield return new WaitForSeconds(0.035f);
+            }
+
+            dialogueText.text += " ";
         }
 
         sentenceInProgress = false;
