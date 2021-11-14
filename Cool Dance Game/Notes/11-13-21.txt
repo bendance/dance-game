@@ -1,0 +1,15 @@
+Notes for game on 11/13/2021
+
+Hmmm... so what now?
+
+I want it so that dialogue finishes when i press z again
+
+So in undertale I'm not allowed the press z until the text finishes:
+
+Here are my tasks for the day:
+
+1.) Users can only leave text when it's finished displaying
+
+2.) Getting pixel perfect camera
+
+3.) Dialogue with each character

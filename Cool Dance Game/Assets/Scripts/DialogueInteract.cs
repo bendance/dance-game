@@ -21,7 +21,7 @@ public class DialogueInteract : MonoBehaviour
             }
 
             
-            else if(manager.dialogueStarted)
+            else if(manager.dialogueStarted && !manager.sentenceInProgress)
             {
                 manager.DisplayNextSentence();
             }

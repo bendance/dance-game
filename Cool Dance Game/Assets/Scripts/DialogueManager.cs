@@ -1,11 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    private Queue<string> sentences;
+    public Text dialogueText;
+    public Animator animator;
+    public bool sentenceInProgress = false;
     public bool dialogueStarted;
+
+    private Queue<string> sentences;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +20,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue)
     {
+        animator.SetBool("isOpen", true);
         dialogueStarted = true;
         Debug.Log("Starting conversation with " + dialogue.name);
 
@@ -30,6 +36,10 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        sentenceInProgress = true;
+
+        Debug.Log(sentenceInProgress);
+
         if (sentences.Count == 0)
         {
             EndDialogue();
@@ -37,12 +47,27 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
-        Debug.Log(sentence);
+        
+        StartCoroutine(typeSentence(sentence));
+    }
+
+    IEnumerator typeSentence (string sentence)
+    {
+        dialogueText.text = "";
+
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(0.04f);
+        }
+
+        sentenceInProgress = false;
+        Debug.Log(sentenceInProgress);
     }
 
     void EndDialogue()
     {
         dialogueStarted = false;
-        Debug.Log("End of conversation");
+        animator.SetBool("isOpen", false);
     }
 }
