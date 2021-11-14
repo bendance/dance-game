@@ -6,20 +6,30 @@ public class DialogueInteract : MonoBehaviour
 {
     public DialogueTrigger trigger;
     public DialogueManager manager;
+    private bool zReady = true;
 
     // Update is called once per frame
     void Update()
     {
-        // Starting dialogue
-        if(Input.GetKeyDown("z") && !manager.dialogueStarted)
+        // when you press the key set zready to false
+        if (Input.GetKeyDown("z") && zReady)
         {
-            trigger.triggerDialogue();
-        }
+            // Starting dialogue
+            if(!manager.dialogueStarted)
+            {
+                trigger.triggerDialogue();
+            }
 
-        // Continue dialogue
-        if(Input.GetKeyDown("z") && manager.dialogueStarted)
-        {
-            manager.DisplayNextSentence();
+            
+            else if(manager.dialogueStarted)
+            {
+                manager.DisplayNextSentence();
+            }
+
+            zReady = false;
         }
+        // when you release the key set zready to true
+        else if(Input.GetKeyUp("z") && !zReady)
+            zReady = true;
     }
 }
