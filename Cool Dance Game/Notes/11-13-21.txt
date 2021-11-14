@@ -8,8 +8,10 @@ So in undertale I'm not allowed the press z until the text finishes:
 
 Here are my tasks for the day:
 
-1.) Users can only leave text when it's finished displaying
+1.) Users can only leave text when it's finished displaying X
 
-2.) Getting pixel perfect camera
+2.) Getting pixel perfect camera X
 
 3.) Dialogue with each character
+
+It takes 39 ms before reaching new line

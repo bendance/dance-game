@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DialogueInteract : MonoBehaviour
 {
-    public DialogueTrigger trigger;
+    private DialogueTrigger trigger = null;
     public DialogueManager manager;
     private bool zReady = true;
 
@@ -12,7 +12,7 @@ public class DialogueInteract : MonoBehaviour
     void Update()
     {
         // when you press the key set zready to false
-        if (Input.GetKeyDown("z") && zReady)
+        if (Input.GetKeyDown("z") && zReady && trigger)
         {
             // Starting dialogue
             if(!manager.dialogueStarted)
@@ -31,5 +31,15 @@ public class DialogueInteract : MonoBehaviour
         // when you release the key set zready to true
         else if(Input.GetKeyUp("z") && !zReady)
             zReady = true;
+    }
+
+    void OnCollisionEnter2D(Collision2D col) 
+    {
+        trigger = col.gameObject.GetComponent<DialogueTrigger>();
+    }
+
+    void OnCollisionExit2D(Collision2D col)
+    {
+        trigger = null;
     }
 }

@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1980110382}
   animator: {fileID: 1412841068}
+  sentenceInProgress: 0
   dialogueStarted: 0
 --- !u!4 &90778602
 Transform:
@@ -463,7 +464,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e57a1d2ee373614dab05317636bca32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 984824438}
   manager: {fileID: 90778601}
 --- !u!1 &443809779
 GameObject:
@@ -476,6 +476,8 @@ GameObject:
   - component: {fileID: 443809780}
   - component: {fileID: 443809781}
   - component: {fileID: 443809782}
+  - component: {fileID: 443809783}
+  - component: {fileID: 443809784}
   m_Layer: 0
   m_Name: Bartender
   m_TagString: Untagged
@@ -563,6 +565,48 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!114 &443809783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443809779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43474c78b5682f74d8df845de25d2fdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Bartender
+    sentences:
+    - Buy somethin' will ya!
+--- !u!61 &443809784
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443809779}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.1}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.48, y: 0.47}
+    newSize: {x: 0.48, y: 0.47}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.48, y: 0.67}
+  m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,6 +618,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -589,6 +634,26 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AssetsPPU: 100
+  m_RefResolutionX: 320
+  m_RefResolutionY: 180
+  m_UpscaleRT: 0
+  m_PixelSnapping: 1
+  m_CropFrameX: 1
+  m_CropFrameY: 1
+  m_StretchFill: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -886,8 +951,7 @@ MonoBehaviour:
   dialogue:
     name: Briefcase Twin
     sentences:
-    - Hello, I am a test.
-    - I sure hope that I work.
+    - Take it easy now.
 --- !u!1 &1118697127
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,6 +963,8 @@ GameObject:
   - component: {fileID: 1118697128}
   - component: {fileID: 1118697129}
   - component: {fileID: 1118697130}
+  - component: {fileID: 1118697132}
+  - component: {fileID: 1118697131}
   m_Layer: 0
   m_Name: Raveboy
   m_TagString: Untagged
@@ -986,6 +1052,61 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!61 &1118697131
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118697127}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.325}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.63, y: 0.66}
+    newSize: {x: 0.63, y: 0.66}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.63, y: 0.65}
+  m_EdgeRadius: 0
+--- !u!114 &1118697132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118697127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43474c78b5682f74d8df845de25d2fdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Raveboy
+    sentences:
+    - So, let me tell you a story.
+    - About my mom and dad, right...
+    - So they were out of town one weekend and I wanted to throw this party yeah...
+    - So it starts out as just a couple of guys...
+    - And then a couple more guys...
+    - And then all of the sudden, there were 500 people on my lawn.
+    - Doing illegal shit...
+    - Loud music, four lokos, bad bitches...
+    - It was a whole ordeal.
+    - Anyways, the police showed up and now I owe the city 20,000 dollars in damages.
+    - My parents are so pissed at me...
+    - But it was all worth it.
+    - ...
+    - If you can't tell, I'm a habitual line crosser.
 --- !u!1 &1189869151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1235,6 +1356,7 @@ GameObject:
   - component: {fileID: 1232223603}
   - component: {fileID: 1232223604}
   - component: {fileID: 1232223605}
+  - component: {fileID: 1232223606}
   m_Layer: 0
   m_Name: Duck
   m_TagString: Untagged
@@ -1348,6 +1470,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!114 &1232223606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232223601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43474c78b5682f74d8df845de25d2fdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Duck
+    sentences:
+    - I'm a duck.
 --- !u!1 &1412841064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1400,7 +1538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.09411765, g: 0.078431375, b: 0.14509805, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1538,6 +1676,7 @@ GameObject:
   - component: {fileID: 1883294869}
   - component: {fileID: 1883294870}
   - component: {fileID: 1883294871}
+  - component: {fileID: 1883294872}
   m_Layer: 0
   m_Name: Demon
   m_TagString: Untagged
@@ -1651,6 +1790,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.16}
   m_EdgeRadius: 0
+--- !u!114 &1883294872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883294867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43474c78b5682f74d8df845de25d2fdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Demon
+    sentences:
+    - 'Have you ever heard of Mob Psycho 100? '
+    - If I wasn't at this bar, I probably would be watching it right now! =w=
 --- !u!1 &1948049631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1752,7 +1908,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -30, y: -30}
+  m_SizeDelta: {x: -40, y: -40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1980110382
 MonoBehaviour:
@@ -1786,8 +1942,17 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 2
-  m_Text: Default dialogue
+    m_LineSpacing: 1
+  m_Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo,
+    nibh vel gravida ultricies, nisi risus rhoncus libero, a condimentum dui neque
+    a ipsum. Pellentesque consequat quam eu ante tincidunt, quis blandit dolor maximus.
+    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+    turpis egestas. Quisque interdum, odio non placerat dignissim, turpis sapien
+    dignissim sem, a pretium est elit et risus. Mauris fermentum quam vehicula dolor
+    interdum malesuada. Pellentesque ante elit, dictum sit amet malesuada vel, sagittis
+    ut nibh. Praesent mattis metus diam, consectetur imperdiet erat convallis quis.
+    Mauris vehicula ut urna eget vulputate. Vivamus nec velit in justo tempus sodales.
+    Nunc blandit sem non nisi congue tempus. Pellentesque in eleifend ex.
 --- !u!222 &1980110383
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1808,6 +1973,7 @@ GameObject:
   - component: {fileID: 1996568945}
   - component: {fileID: 1996568946}
   - component: {fileID: 1996568947}
+  - component: {fileID: 1996568948}
   m_Layer: 0
   m_Name: Twin1
   m_TagString: Untagged
@@ -1921,3 +2087,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.16}
   m_EdgeRadius: 0
+--- !u!114 &1996568948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996568943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43474c78b5682f74d8df845de25d2fdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Twin1
+    sentences:
+    - Boy howdy, I sure do like to party.
