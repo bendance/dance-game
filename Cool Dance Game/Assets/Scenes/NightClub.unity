@@ -275,6 +275,7 @@ MonoBehaviour:
   speed: 1.3
   rb: {fileID: 226539669}
   animator: {fileID: 226539670}
+  manager: {fileID: 90778601}
 --- !u!50 &226539669
 Rigidbody2D:
   serializedVersion: 4

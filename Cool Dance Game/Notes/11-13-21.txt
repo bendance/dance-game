@@ -12,6 +12,16 @@ Here are my tasks for the day:
 
 2.) Getting pixel perfect camera X
 
-3.) Dialogue with each character
+3.) Dialogue with each character X
+
+4.) Player should not be able to walk while talking X
+
+5.) Get rid of word clipping
+
+6.) Speed up text while holding down "x"
+
+7.) Make text box pretty
+
+Known bugs: Issues with talking with bartender and raveguy, can clip behind demo girl
 
 It takes 39 ms before reaching new line

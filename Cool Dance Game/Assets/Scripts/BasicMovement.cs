@@ -8,6 +8,7 @@ public class BasicMovement : MonoBehaviour
 
     public Rigidbody2D rb;
     public Animator animator;
+    public DialogueManager manager;
 
     Vector2 movement;
 
@@ -61,9 +62,19 @@ public class BasicMovement : MonoBehaviour
         animator.SetFloat("vertical", movement.y);
         animator.SetFloat("speed", movement.sqrMagnitude);
 
-        // Set the order layer everytime
-
-        setLastMoved();
+        // Player cannot move if talking
+        if (manager.dialogueStarted)
+        {
+            movement = Vector2.zero;
+            animator.SetFloat("horizontal", 0);
+            animator.SetFloat("vertical", 0);
+            animator.SetFloat("speed", 0);
+        }
+        else
+        {
+            // Set the order layer everytime
+            setLastMoved();
+        }
     }
 
     void FixedUpdate()
