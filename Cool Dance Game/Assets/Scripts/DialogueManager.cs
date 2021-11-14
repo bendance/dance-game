@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
     public bool sentenceInProgress = false;
     public bool dialogueStarted;
+    public bool xPushed = false;
 
     private Queue<string> sentences;
 
@@ -51,6 +52,13 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(typeSentence(sentence));
     }
 
+    private float getTextSpeed()
+    {
+        if (xPushed)
+            return 0f;
+        return 0.0375f;
+    }
+
     IEnumerator typeSentence (string sentence)
     {
         dialogueText.text = "";
@@ -59,10 +67,10 @@ public class DialogueManager : MonoBehaviour
         // Split the sentence by its spaces
         string[] words = sentence.Split(' ');
 
-        Debug.Log(words);
-
         foreach (string word in words)
         {
+            float waitTime = getTextSpeed();
+
             // If a word plus length of current dialogue text is longer than 39, add a new line
             if (word.Length + dialogueText.text.Length > 39 && firstLine)
             {
@@ -74,14 +82,13 @@ public class DialogueManager : MonoBehaviour
             foreach (char letter in word)
             {
                 dialogueText.text += letter;
-                yield return new WaitForSeconds(0.035f);
+                yield return new WaitForSeconds(waitTime);
             }
 
             dialogueText.text += " ";
         }
 
         sentenceInProgress = false;
-        Debug.Log(sentenceInProgress);
     }
 
     void EndDialogue()

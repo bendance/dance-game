@@ -1807,7 +1807,7 @@ MonoBehaviour:
     name: Demon
     sentences:
     - 'Have you ever heard of Mob Psycho 100? '
-    - If I wasn't at this bar, I probably would be watching it right now! =w=
+    - If I wasn't at this bar, I'd probably be watching it right now! =w=
 --- !u!1 &1948049631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1944,16 +1944,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo,
-    nibh vel gravida ultricies, nisi risus rhoncus libero, a condimentum dui neque
-    a ipsum. Pellentesque consequat quam eu ante tincidunt, quis blandit dolor maximus.
-    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-    turpis egestas. Quisque interdum, odio non placerat dignissim, turpis sapien
-    dignissim sem, a pretium est elit et risus. Mauris fermentum quam vehicula dolor
-    interdum malesuada. Pellentesque ante elit, dictum sit amet malesuada vel, sagittis
-    ut nibh. Praesent mattis metus diam, consectetur imperdiet erat convallis quis.
-    Mauris vehicula ut urna eget vulputate. Vivamus nec velit in justo tempus sodales.
-    Nunc blandit sem non nisi congue tempus. Pellentesque in eleifend ex.
+  m_Text: 
 --- !u!222 &1980110383
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -6,7 +6,9 @@ public class DialogueInteract : MonoBehaviour
 {
     private DialogueTrigger trigger = null;
     public DialogueManager manager;
+
     private bool zReady = true;
+    private bool xReady = true;
 
     // Update is called once per frame
     void Update()
@@ -31,6 +33,20 @@ public class DialogueInteract : MonoBehaviour
         // when you release the key set zready to true
         else if(Input.GetKeyUp("z") && !zReady)
             zReady = true;
+
+
+        // when you hold x if the text has started, text goes really fast
+        if (Input.GetKeyDown("x") && xReady && manager.dialogueStarted)
+        {
+            manager.xPushed = true;
+            xReady = false;
+        }
+
+        else if(Input.GetKeyUp("x") && !xReady)
+        {
+            manager.xPushed = false;
+            xReady = true;
+        }
     }
 
     void OnCollisionEnter2D(Collision2D col) 

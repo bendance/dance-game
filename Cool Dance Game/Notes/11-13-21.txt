@@ -16,7 +16,7 @@ Here are my tasks for the day:
 
 4.) Player should not be able to walk while talking X
 
-5.) Get rid of word clipping
+5.) Get rid of word clipping X
 
 6.) Speed up text while holding down "x"
 
