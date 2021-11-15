@@ -18,7 +18,7 @@ Here are my tasks for the day:
 
 5.) Get rid of word clipping X
 
-6.) Speed up text while holding down "x" X
+6.) Speed up text while holding down "x"
 
 7.) Make text box pretty
 
