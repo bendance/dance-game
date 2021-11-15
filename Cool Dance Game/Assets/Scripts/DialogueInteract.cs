@@ -52,6 +52,7 @@ public class DialogueInteract : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col) 
     {
         trigger = col.gameObject.GetComponent<DialogueTrigger>();
+        print(col.gameObject.name);
     }
 
     void OnCollisionExit2D(Collision2D col)
