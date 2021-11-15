@@ -1,0 +1,11 @@
+So let's talk about the game
+
+Here are some tasks for the first two hours:
+
+- make the text box pretty X
+- make it so I can't clip behind demon girl X
+- fix issue with talking with bartender/raveguy X
+- pull your last commit and see if that has any artifacts
+
+Known bugs: hard time talking to bartender and raveboy because of collision, maybe edge collider takes priority over box?
+artificats come up when my player walks Seems like this bug only occurs in play mode due to strange, screen proportions (no biggie) X
