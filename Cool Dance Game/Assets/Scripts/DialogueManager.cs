@@ -7,6 +7,7 @@ public class DialogueManager : MonoBehaviour
 {
     public Text dialogueText;
     public Animator animator;
+    public AudioManager audio;
     public bool sentenceInProgress = false;
     public bool dialogueStarted;
     public bool xPushed = false;
@@ -39,12 +40,15 @@ public class DialogueManager : MonoBehaviour
     {
         sentenceInProgress = true;
 
-        Debug.Log(sentenceInProgress);
-
         if (sentences.Count == 0)
         {
             EndDialogue();
             return;
+        }
+        else
+        {
+            Debug.Log("entered");
+            audio.PlayTextSpeech();
         }
 
         string sentence = sentences.Dequeue();
